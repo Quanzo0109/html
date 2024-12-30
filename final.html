@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>柏宏薑母鴨</title> <!-- 設定瀏覽器頁面的標題 -->
+        <meta charset="utf-8"> <!-- 指定文件的字符編碼為 UTF-8，支援中文 -->
+        <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet"> <!-- 加載外部 CSS，提供幻燈片效果的樣式 -->
+        <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script> <!-- 加載 jQuery，用於簡化 JavaScript 操作 -->
+        <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script> <!-- 加載 Flexslider 的功能腳本，用於幻燈片效果 -->
+        <script>
+            $(window).load(function() { 
+                $('.flexslider').flexslider({
+                    animation: "slide", <!-- 設定幻燈片動畫效果為滑動 -->
+                    rtl: true 
+                });
+            });
+        </script>
+        <style>
+            *{
+                margin:0; 
+                padding:0; 
+                color:gray; 
+                text-align:center; 
+        }
+        .top {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+        }
+        .top .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .nav li {
+            margin: 0 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        li.dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .slider {
+            background-color: black;
+            margin-bottom: 20px;
+        }
+        .banner {
+            background-color: #eaf7ff;
+            padding: 40px 20px;
+        }
+        .banner h1 {
+            font-size: 36px;
+            color: #003d6b;
+        }
+        .banner p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .destinations {
+            padding: 40px 20px;
+        }
+        .destinations h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .destinations .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .destinations .place {
+            text-align: center;
+            width: 200px;
+        }
+        .destinations img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .destinations h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+        }
+        .contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .contact .info {
+            font-size: 18px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">獨特美味</div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於我們</a></li>
+            <li class="dropdown">
+                <a href="#destinations">菜單介紹</a>
+                <div class="dropdown-content">
+                    <a href="#destinations">風味薑母鴨/雞</a>
+                    <a href="#destinations">蒙古原味羊肉鍋</a>
+                    <a href="#destinations">豬肚抱母雞</a>
+                    
+                </div>
+            </li>
+            <li><a href="#contact">訂購專線</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><img src ="https://github.com/Quanzo0109/html/raw/main/1.jpg"></li>
+                <li><img src ="https://github.com/Quanzo0109/html/raw/main/773107686ac0c2453e4301c1afe2fc57.jpg"></li>
+                <li><img src ="https://github.com/Quanzo0109/html/raw/main/3.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner" id="about">
+        <h1>柏宏薑母鴨</h1>
+        <p>薑母鴨上班學會一切，在老闆店旁邊開一家。</p>
+    </div>
+    <div class="destinations" id="destinations">
+        <h2>圖片就是真實</h2>
+        <div class="container">
+            <div class="place">
+                <img src="https://github.com/Quanzo0109/html/raw/main/%E4%B9%BE%E6%A2%85%E6%B9%AF.jpg" alt="乾梅湯">
+                <h3>柏宏敖釀乾梅湯</h3>
+            </div>
+            <div class="place">
+                <img src="https://github.com/Quanzo0109/html/raw/main/%E9%BA%B5%E7%B7%9A.jpg" alt="將荒麵線">
+                <h3>柏宏手工江黃麵線</h3>
+            </div>
+            <div class="place">
+                <img src="https://github.com/Quanzo0109/html/raw/main/%E7%B1%B3%E5%8D%94.jpg" alt="母血">
+                <h3>柏宏手工麻辣米血</h3>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>如何聯絡我們</h2>
+        <p class="info">
+            電子郵件: aaa123@gmail.com<br>
+            電話: 0969696969<br>
+            地址: 前老闆店旁，前老闆在哪我在哪
+        </p>
+    </div>
+    <div class="footer">
+        &copy; 2024 柏宏薑母鴨. 版權所有。
+    </div>
+</body>
+</html>
